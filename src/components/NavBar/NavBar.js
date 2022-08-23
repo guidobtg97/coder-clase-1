@@ -1,9 +1,18 @@
+
+import './NavBar.css';
+
 const NavBar = () => {
     return (
-        <header>
+
+        <section id="header">
+
+            <div>
+                <a href='https://google.com'><img src="logo.png" alt="logo"></img></a>
+            </div>
+
+            <div>
             <nav>
-                <ul>
-                    <img src="logo.png" alt="logo"></img>
+                <ul id="navbar">      
                     <li>
                         <a href="https://google.com.">Tienda</a>
                     </li>
@@ -15,7 +24,9 @@ const NavBar = () => {
                     </li>
                 </ul>
             </nav>
-        </header>
+            </div>
+            
+        </section>
     )
 }
 
