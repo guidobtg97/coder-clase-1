@@ -1,5 +1,5 @@
 import CartWidget from '../CartWidget';
-import ItemListContainer from "../ItemListContainer";
+
 import './NavBar.css';
 
 const NavBar = () => {
@@ -22,11 +22,14 @@ const NavBar = () => {
                     </li>
                     <li>
                         <a href="https://google.com.">Contacto</a>
-                    </li>
-                    <li><CartWidget/></li>
-                    <li><ItemListContainer/></li>
+                    </li>        
                 </ul>
+                
             </nav>
+            </div>
+
+            <div>
+                 <CartWidget/>
             </div>
             
         </section>
