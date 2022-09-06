@@ -13,6 +13,7 @@ export const products = [
         price: 2500,
         stock: 15,
         category: 'Remeras',
+        description: 'Remera básica color azul de cuello redondo y manga corta. Ideal en cualquier outfit casual',
         img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/141/001/products/azul_lisa1-949676ed82f6cf86ab15560313247436-1024-1024.png',
     },
     {
@@ -32,3 +33,4 @@ export const products = [
         img: 'https://http2.mlstatic.com/D_NQ_NP_745601-MLA45495350462_042021-W.jpg',
     },
 ];
+
