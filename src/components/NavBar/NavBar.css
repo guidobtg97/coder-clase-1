@@ -5,10 +5,16 @@
     justify-content: space-between;
 
     padding: 20px 90px;
-    background: black ;
+    background: rgba(28,124,194,255);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     
+}
+
+#logo-img {
+    border: none;
+    width: 165px;
+    height: 130px;
 }
 
 #navbar {
@@ -17,13 +23,13 @@
     justify-content: center;
 }
 
-#navbar li {
+#navbar .link-li {
     list-style: none;
     padding: 0 20px;
     
 }
 
-#navbar li a {
+#navbar .link-li {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -31,10 +37,14 @@
     transition: 0.03s ease;
 }
 
-#navbar li a:hover {
+#navbar .link-li:hover {
     color: #bca837;
 }
 
 #cartWidget-icon{
     color: white;
+}
+
+#cartWidget-icon:hover{
+    color: #bca837;
 }

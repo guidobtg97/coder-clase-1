@@ -1,7 +1,8 @@
 .item-detail-padre {
-    background-color: rgb(212, 190, 190);
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 #prod-img{
