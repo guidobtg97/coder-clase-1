@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
 
         <section id="header">
-
+            
             <div>
                 <Link to='/'><img id='logo-img' src="logo-sleepy.png" alt=''/></Link>   
             </div>

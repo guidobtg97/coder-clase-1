@@ -1,7 +1,15 @@
-import React from 'react'
-import '../ItemDetail/ItemDetail.css'
-
+import React, {useState} from 'react';
+import '../ItemDetail/ItemDetail.css';
+import { Link } from 'react-router-dom';
+import ItemCount from '../ItemCount/ItemCount';
 const ItemDetail = ({product}) => {
+  
+  const [cantidad, setCantidad] = useState(0);
+
+  const onAdd = (count) => {
+    setCantidad(count);
+  };
+
   return (
     
     <div key={product.id} className='item-detail-padre'>
@@ -13,6 +21,16 @@ const ItemDetail = ({product}) => {
             <h5 id='caja-2'>{product.price}</h5>
             <h5 id='caja-3'>Stock: {product.stock}</h5>
             <p id='caja-4'>{product.description}</p>
+            <div>
+            {cantidad === 0 
+                 ?  
+                <ItemCount  stock={product.stock} initial={1} onAdd={onAdd}/>
+                 : 
+                <button >    
+                <Link to='/cart'>Ir al Carrito</Link>
+                </button>
+            }
+            </div>
         </div>   
     </div>
     

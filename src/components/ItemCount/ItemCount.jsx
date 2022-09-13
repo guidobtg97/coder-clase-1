@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
 
-const ItemCount = (props) => {
+const ItemCount = ({stock, onAdd, initial}) => {
 
    
 
-   const [count, setCount] = useState(props.initial);
+   const [count, setCount] = useState(initial);
 
 
 
     const sumar = () => {
-        if (count < props.stock){
+        if (count < stock){
             setCount(count + 1);
         }else{
             alert("Alcanzaste el stock máximo de éste producto")
@@ -24,7 +24,7 @@ const ItemCount = (props) => {
         };
     };
 
-    const onAdd = () =>{
+  /*  const onAdd = () =>{
         if (count > props.stock){
             alert("No hay stock suficente de este producto")
         }else{
@@ -32,12 +32,13 @@ const ItemCount = (props) => {
         }
         
     }
+  */
 
   return (
     <div>
         <button onClick={restar}>-</button>
         <button onClick={sumar}>+</button>
-        <buton onClick={onAdd}>Agregar</buton>      
+        <button onClick={()=> onAdd(count)}>Agregar</button>      
         <p>Productos en carrito: {count}</p>
     </div>
   )

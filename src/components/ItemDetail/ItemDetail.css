@@ -1,8 +1,10 @@
 .item-detail-padre {
+    position: relative;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    
 }
 
 #prod-img{
