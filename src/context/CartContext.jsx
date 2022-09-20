@@ -26,6 +26,21 @@ const CartProvider = ({children}) => {
 
     const isInCart = (id) => cart.find((product) => product.id === id) ? true : false;
     
+    const totalPrice = () => {
+        let acumulador = 0;
+        cart.forEach((prod) => {
+            acumulador += prod.price * prod.count;
+        })
+        return acumulador;
+    }
+
+    const totalProductsCart = () => {
+        let acumulador = 0;
+        cart.forEach((prod) => {
+            acumulador += prod.count;
+        })
+        return acumulador
+    }
 
     const removeProduct = (id) => {
         setCart(cart.filter((product) => product.id !==id));
@@ -36,7 +51,7 @@ const CartProvider = ({children}) => {
     }
 
     return (
-        <CartContext.Provider value={{ cart, agregarAlCarrito, clearCart, isInCart, removeProduct }}>
+        <CartContext.Provider value={{ cart, agregarAlCarrito, totalPrice, totalProductsCart, clearCart, isInCart, removeProduct }}>
             {children}
         </CartContext.Provider>
     )
