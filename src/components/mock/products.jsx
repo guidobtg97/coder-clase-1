@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         title: 'Conjunto Sommier Perseus',
-        price: 2500,
+        price: 89900,
         stock: 15,
         category: 'sommiers',
         description: 'El sommier Perseus está compuesto por tres capas de espuma de alta densidad (35kg/m3). Brindando así un soporte rígido que ayuda en el tratamiento de dolor cervico-lumbáres.',
@@ -11,7 +11,7 @@ export const products = [
     {
         id: 2,
         title: 'Colchon Cannon Exclusive Pillow Top',
-        price: 2500,
+        price: 65500,
         stock: 15,
         category: 'colchones',
         description: 'Cannon Exclusive representa la línea Premium de Cannon. Su estructura de espuma de alta densidad (30kg/m3) permite alcanzar un sueño reparado y la total relajación de músculos estresados. Los bordes internos de acero laminado evitan la deformación del colchón y el Pillow Top incorporado otorga el mix justo y necesario de firmeza y comfort.',
