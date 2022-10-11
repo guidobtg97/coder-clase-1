@@ -7,10 +7,8 @@ const Header = () => {
         <>
         <section>
             <NavBar/>
-        </section>
-        
-        </>
-       
+        </section>    
+        </>       
     )
 }
 

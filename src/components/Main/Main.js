@@ -6,6 +6,7 @@ import Cart from '../Cart/Cart';
 
 const Main = () => {
   return (  
+    
     <Routes>
         <Route
           path='/'
@@ -22,10 +23,7 @@ const Main = () => {
         <Route
           path='/cart'
           element={<Cart/>}
-        />
-       
-        
-        
+        />     
     </Routes>
   )
 }

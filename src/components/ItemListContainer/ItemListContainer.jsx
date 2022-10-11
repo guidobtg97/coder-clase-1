@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from '../ItemList/ItemList';
-//import { products } from '../mock/products';
 import { useParams } from 'react-router-dom';
 import { db } from '../../firebaseConfig';
 import { collection, getDocs, query, where} from 'firebase/firestore';
@@ -30,10 +29,6 @@ const ItemListContainer = () => {
       }
       
       }, [categoryName]);
-      
-  
-      
-
       
   return (
     <div>
