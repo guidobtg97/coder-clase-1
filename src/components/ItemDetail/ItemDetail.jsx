@@ -7,27 +7,24 @@ import { CartContext } from '../../context/CartContext';
 const ItemDetail = ({product}) => {
   
   const [cantidad, setCantidad] = useState(0);
-  const {cart, agregarAlCarrito} = useContext(CartContext);
+  const {agregarAlCarrito} = useContext(CartContext);
 
   const onAdd = (count) => {
     setCantidad(count);
     agregarAlCarrito(product, count); 
   };
 
-return (
+  return (
     
     <div key={product.id} className='item-detail-padre'>
-        
         <div className='item-img-container'>
             <img id='prod-img' src={product.img} alt=''/>
         </div>
-
         <div className='details-container'>
             <h4 id='caja-1'>{product.title}</h4>
             <h5 id='caja-2'>{product.price}</h5>
             <h5 id='caja-3'>Stock: {product.stock}</h5>
             <p id='caja-4'>{product.description}</p>
-
             <div>
             {cantidad === 0 
                  ?  
@@ -39,7 +36,8 @@ return (
             }
             </div>
         </div>   
-    </div>  
+    </div>
+    
   )
 }
 
