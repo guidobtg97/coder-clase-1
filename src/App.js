@@ -6,9 +6,6 @@ import CartProvider from "./context/CartContext";
 
 
 const App = () => {
-
-   console.log(process.env)
-
     return (
         <CartProvider>
         <BrowserRouter>
