@@ -1,31 +1,41 @@
 .item-detail-padre {
-    position: relative;
     background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+   
+}
+
+.products-container #item-button{
+    background: black;
 }
 
 #prod-img{
-    border: 1px solid black;
     width: 400px;
     height: 400px;
-    margin: 20px;
+    margin: 0;
+    padding: 0;  
 }
 
 .details-container #caja-1, #caja-2, #caja-3, #caja-4 {
     padding-top: 20px;
+    
     color: black;
+    align-items: center;
+    text-align: center;
 }
 
-.details-container {
-    border: 1px solid black;
-    background-color: white;
-    width: 200px;
-    height: 400px;
-    margin-top: 20px;
-    padding-right: 20px;
+.details-container {  
+    width: 400px;
+    height: 200px;  
+}
+
+#item-button {
     padding-left: 20px;
-    float: left;
+    margin: 20px;
+    background: red;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }

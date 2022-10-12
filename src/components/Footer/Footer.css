@@ -7,7 +7,8 @@
 footer {   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    
     background: rgba(28,124,194,255);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);  
 }
@@ -15,7 +16,8 @@ footer {
 footer .col{
     padding-top: 20px;
     display: flex;
-    margin-left: 20px;
+    
+    padding-left: 10rem;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;

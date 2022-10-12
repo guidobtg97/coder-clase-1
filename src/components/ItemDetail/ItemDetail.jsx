@@ -17,9 +17,12 @@ const ItemDetail = ({product}) => {
   return (
     
     <div key={product.id} className='item-detail-padre'>
-        <div className='item-img-container'>
+        
+        <div className='products-container'>
+        <div className='item-img-container' id='img-container'>
             <img id='prod-img' src={product.img} alt=''/>
         </div>
+        
         <div className='details-container'>
             <h4 id='caja-1'>{product.title}</h4>
             <h5 id='caja-2'>{product.price}</h5>
@@ -30,11 +33,12 @@ const ItemDetail = ({product}) => {
                  ?  
                 <ItemCount  stock={product.stock} initial={1} onAdd={onAdd}/>
                  : 
-                <button >    
+                <button id='item-button'>    
                 <Link to='/cart'>Ir al Carrito</Link>
                 </button>
             }
             </div>
+        </div>
         </div>   
     </div>
     

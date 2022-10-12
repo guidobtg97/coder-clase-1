@@ -38,25 +38,3 @@ const ItemListContainer = () => {
 }
 
 export default ItemListContainer;
-
-
-
-/* 
-const getProducts = () => 
-new Promise((response, reject) =>{
-const productosFiltrados = products.filter(
-  (prod) => prod.category === categoryName
-);
-setTimeout(() => 
-  response(categoryName ? productosFiltrados : products), 500);
-});
-
-getProducts()
-.then((data) => {
-  setItems(data);
-})
-
-.catch((error) =>{
-  //console.error(error);
-})
-*/

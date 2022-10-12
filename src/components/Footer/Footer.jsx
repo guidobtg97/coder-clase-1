@@ -13,19 +13,6 @@ const Footer = () => {
         </div>
 
         <div className="col">
-            <h4>Acerca de</h4>
-            <a href="about.html">Nosotros</a>
-            <a href="about.html" id="btn-envios">Envios a domicilio</a>
-            <a href="contact.html">Contacto</a>
-        </div>
-
-        <div className="col">
-            <h4>Mi cuenta</h4>
-            <a href="sign-in.html">Ingresar</a>
-            <a href="carrito.html">Ver carrito</a>       
-        </div>
-
-        <div className="col">
             <h4>Medios de pago</h4>
             <p>Efectivo</p>
             <p>Transferencia</p>
