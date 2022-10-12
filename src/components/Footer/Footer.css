@@ -9,7 +9,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     
-    background: rgba(28,124,194,255);
+    background: linear-gradient(0deg, rgba(34,193,195,0.38139005602240894) 0%, rgba(45,189,253,0.22172619047619047) 100%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);  
 }
 

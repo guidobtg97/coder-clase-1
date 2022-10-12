@@ -1,5 +1,5 @@
 body {
-    background-color:azure
+    background-color: antiquewhite;
 }
 
 .item-detail-padre {
@@ -9,8 +9,7 @@ body {
 }
 
 .products-container{
-    
-    background: linear-gradient(0deg, rgba(34,193,195,0.38139005602240894) 0%, rgba(45,189,253,0.22172619047619047) 100%);
+    background: white;
     float: left;
     width: 30%;
     justify-content: space-between;
@@ -36,14 +35,11 @@ body {
     color: black;
     align-items: center;
     text-align: center;
-    word-wrap: break-all;
-    
 }
 
 .details-container {  
     width: 400px;
-    height: 300px;  
-    
+    height: 200px;  
 }
 
 #item-button {

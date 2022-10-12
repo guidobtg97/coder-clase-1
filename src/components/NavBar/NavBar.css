@@ -5,7 +5,7 @@
     justify-content: space-between;
 
     padding: 20px 90px;
-    background: rgba(28,124,194,255);
+    background: linear-gradient(0deg, rgba(34,193,195,0.38139005602240894) 0%, rgba(45,189,253,0.22172619047619047) 100%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     
@@ -33,7 +33,7 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    color: beige;
+    color: #222;
     transition: 0.03s ease;
 }
 
