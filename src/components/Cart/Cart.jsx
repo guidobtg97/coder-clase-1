@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import Form from '../Form/Form';
+import '../Cart/Cart.css';
 
 const Cart = () => {
 
@@ -17,11 +18,16 @@ const Cart = () => {
   }
 
   if (cart.length === 0) {
-    return <>
+    return <> 
+          <div className='cart-container-1'>
+            <div className='empty-container'>
+              <img id='empty-cart' src="empty-cart.png" alt='carrito-vacio'/>
               <h3>¡Vaya! El carrito está vacio, deberías agregar algo.</h3>
-              <button >    
-                  <Link to='/'>Ir a la tienda</Link>
+              <button id='btn-cart'>    
+                  <Link id='link-cart' to='/'>Ir a la tienda</Link>
               </button>
+            </div>
+          </div>
           </>
   }else {
     return (
