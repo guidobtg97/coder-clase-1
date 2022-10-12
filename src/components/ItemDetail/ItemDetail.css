@@ -31,6 +31,7 @@ body {
 }
 
 .details-container #caja-1, #caja-2, #caja-3, #caja-4 {
+    font-size: 15px;
     padding-top: 20px;
     padding-left: 23%;
     color: black;
@@ -42,16 +43,72 @@ body {
 
 .details-container {  
     width: 400px;
-    height: 300px;  
+    height: 350px;  
     
 }
 
-#item-button {
-   
-    margin: 20px;
-    margin-left: 200px;
-    width: 100px;
+#button-container, #detail-button{
+    justify-items: flex-end;
     align-items: center;
     justify-content: center;
     justify-items: center;
+}
+
+.details-container #item-button{
+    border-radius: 3rem;
+    background: azure;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    margin-left: 200px;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border: none;
+}
+
+#item-button:hover{
+    cursor: pointer;
+    background: lightseagreen;
+    color: white;
+}
+
+#detail-button{
+    border-radius: 2rem;
+    background: azure;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#detail-button:hover{
+    cursor: pointer;
+    background: lightseagreen;
+}
+
+#add-button{
+    border-radius: 2rem;
+    background: azure;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#add-button:hover{
+    cursor: pointer;
+    background: lightseagreen;
+}
+
+#products-cart{
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: center;
 }

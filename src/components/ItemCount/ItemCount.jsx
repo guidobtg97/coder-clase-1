@@ -19,11 +19,11 @@ const [count, setCount] = useState(initial);
         };
     }
 return (
-    <div>
-        <button onClick={restar}>-</button>
-        <button onClick={sumar}>+</button>
-        <button onClick={()=> onAdd(count)}>Agregar</button>      
-        <p>Productos en carrito: {count}</p>
+    <div id='button-container'>
+        <button id='detail-button' onClick={restar}>-</button>
+        <button id='detail-button' onClick={sumar}>+</button>
+        <button id='add-button' onClick={()=> onAdd(count)}>Agregar</button>      
+        <p id='products-cart'>Productos en carrito: {count}</p>
     </div>
   )
 }
